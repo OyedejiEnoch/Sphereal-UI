@@ -19,7 +19,7 @@ export const CallToAction = () => {
     offset:['end start', 'start end']
   })
 
-  const transformedY = useTransform(scrollYProgress, [0,1], [200,-200])
+  // const transformedY = useTransform(scrollYProgress, [0,1], [200,-200])
 
   const springX=useSpring(xProgress)
   const springY=useSpring(yProgress)

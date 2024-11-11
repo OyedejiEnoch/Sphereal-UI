@@ -46,7 +46,7 @@ const Button = ({variant, children}:buttonProp) => {
         }else{
           animate(angle, 45, {duration:0.5})
         }
-      },[isHovered])
+      },[isHovered, angle])
   return (
     <motion.button
       onMouseEnter={()=>setIsHovered(true)}

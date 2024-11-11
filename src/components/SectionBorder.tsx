@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const SectionBorder = (props:{borderTop?:boolean } & HTMLAttributes<HTMLDivElement>) => {
-  const {className, borderTop, children,...otherProps }=props
+  const {className, borderTop, children }=props
   return (
     <div className={twMerge('border-1 border-l border-r border-[var(--color-border)] relative', borderTop && 'border-t', className)}>
       {borderTop && (

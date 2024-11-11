@@ -55,7 +55,7 @@ export const Testimonials = () => {
           <motion.div layout className="border-gradient rounded-3xl px-6 md:px-10 lg:px-16 lg:py-24 py-16 relative flex flex-col md:flex-row gap-12 md:mx-10 lg:mx-20">
             <FontAwesomeIcon icon={faQuoteLeft} className="absolute size-20 text-violet-400 top-0 -translate-y-1/2 left-6 md:left-10 lg:left-16" />
             {testimonials.map((testimonial, index)=>(
-              <AnimatePresence>
+              <AnimatePresence key={testimonial.name}>
               <React.Fragment key={testimonial.name}>
               {testimonialIndex === index && (
                

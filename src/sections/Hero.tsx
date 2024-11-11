@@ -8,7 +8,7 @@ import Orbit from '@/components/Orbit';
 import Planet from '@/components/Planet';
 import SectionBorder from '@/components/SectionBorder';
 import SectionContent from '@/components/SectionContent';
-import {motion, useMotionValue, useMotionValueEvent, useScroll, useSpring, useTransform} from 'framer-motion'
+import {motion, useMotionValue, useScroll, useSpring, useTransform} from 'framer-motion'
 import { useEffect, useRef, useState } from 'react';
 
 
@@ -41,7 +41,7 @@ export const useMousePosition =()=>{
       clientX.set(e.clientX)
       clientY.set(e.clientY)
     })
-  },[])
+  },[clientX,clientY])
 
   return {xProgress, yProgress}
 }
